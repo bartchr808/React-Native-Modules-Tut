@@ -1,4 +1,4 @@
-package com.androidpackagetut.imagepicker;
+package com.androidpackagetut;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
