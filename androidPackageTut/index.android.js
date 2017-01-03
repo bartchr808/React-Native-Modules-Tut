@@ -7,12 +7,22 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+	NativeModules,
   StyleSheet,
   Text,
   View
 } from 'react-native';
 
 export default class androidPackageTut extends Component {
+	componentDidMount(){
+		console.log('did mount');
+		NativeModules.ImagePicker.openSelectDialog(
+		  {}, // no config yet
+		  (uri) => { console.log(uri) },
+		  (error) => { console.log(error) }
+		);
+	}
+
   render() {
     return (
       <View style={styles.container}>
